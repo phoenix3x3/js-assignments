@@ -31,6 +31,9 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
+   // const regexp = /{[\d|A-F]{8}-[\d|A-F]{4}-[\d|A-F]{4}-[\d|A-F]{4}-[\d|A-F]{12}}/gi;
+   // return regexp;
+
    throw new Error('Not implemented');
 }
 

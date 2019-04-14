@@ -55,8 +55,8 @@ function getCicleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(value1, value2) {
-    // return (value1 + value2) / 2; -------------------------------------------------------------------------------
+const getAverage = (value1, value2) => {
+   
     throw new Error('Not implemented');
 }
 
@@ -240,10 +240,11 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    // if (parseFloat(value) !== NaN && parseFloat(value) !== undefined) { ------------------------------------------
-    //     return parseFloat(value);
-    // }
-    // return def;
+    if (!isNaN(parseFloat(value)) && isFinite(value)) {
+        return parseFloat(value);
+    } else {
+        return def;
+    }
     throw new Error('Not implemented');
 }
 
